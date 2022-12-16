@@ -1,0 +1,14 @@
+syntax = "proto3";
+package arkijoon001.test.test;
+
+import "gogoproto/gogo.proto";
+import "test/test/params.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "github.com/arki-joon-001/test/x/test/types";
+
+// GenesisState defines the test module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  // this line is used by starport scaffolding # genesis/proto/state
+}

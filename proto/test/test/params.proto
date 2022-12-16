@@ -1,0 +1,12 @@
+syntax = "proto3";
+package arkijoon001.test.test;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "github.com/arki-joon-001/test/x/test/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}
